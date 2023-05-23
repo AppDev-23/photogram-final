@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get("/users", { :controller => "user", :action => "index" })
 
+  get("/photos", { :controller => "photo", :action => "index" })
 
 
 
