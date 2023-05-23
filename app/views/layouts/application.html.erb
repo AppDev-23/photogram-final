@@ -14,6 +14,32 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
 
+<ul>
+      <li>
+      <a href="/users">All users</a>
+      </li>
+
+      <li>
+      <a href="/photos">All public photos</a>
+      </li>
+
+   
+<%# if session.fetch(:user_id) == nil %>
+      <li>
+      <a href="/user_sign_up">User Sign-up</a>
+      </li><li>
+      <a href="/user_sign_in">User Sign-in</a>
+      </li>
+<%# else %>
+      <li>
+      <a href="/user_sign_out">User Sign-out</a>
+      </li>
+    </ul>
+
+
+
+
+
   <body>
     <%= yield %>
   </body>
